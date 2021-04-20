@@ -1,0 +1,22 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countdown </title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        setInterval(() => {
+            document.getElementsByTagName('progress')[0].value =
+            document.getElementsByTagName('progress')[0].value + 1 
+            if (document.getElementsByTagName('progress')[0].value === 10 ){
+                document.getElementsByTagName('progress')[0].value = 1
+        
+            }
+        }, 250);
+    </script>
+</head>
+<body>
+    <progress max="10" value="5"></progress>
+</body>
+</html>
