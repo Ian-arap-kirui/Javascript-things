@@ -4,6 +4,61 @@
     box-sizing: border-box;
 }
 body{
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
     font-family: "Poppins", sans-serif;
     margin:0;
+    padding-top: 3rem;
+}
+.addnote{
+    background-color:rgba(12, 245, 117, 0.884);
+    border-radius: 3px;
+    border:none;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem 1rem;
+    position:fixed;
+    top: 1rem;
+    right:1rem;
+}
+
+.note{
+    background-color: #ffff;
+    box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
+    margin: 20px;
+    height: 400px;
+    width: 400px;
+}
+.note .tools{
+    background-color:rgba(12, 245, 117, 0.884);
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+.note .tools button{
+    background-color: transparent;
+    border: none;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+.note .main{
+    background-color: #eeeeee;
+    overflow: hidden;
+    height: 400px;
+    width:100%;
+}
+.note textarea{
+    outline: none;
+    font-size: 1.2rem;
+    font-family: inherit;
+    border:none;
+    height:400px;
+    width: 100%;
+}
+.note .hidden{
+    display: none;
+
 }
